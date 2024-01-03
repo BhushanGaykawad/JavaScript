@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Rest Parameter: it has a pure array which stores the elements.
+        Rest parameter must be written in the last.
+        rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+        as its job is to collect all the remaining arguments into an array.
+
+        */
+        "use strict";
+        function multiply(...myarg) 
+        {
+          console.log(myarg) //
+          console.log(typeof myarg)// object
+         console.log(myarg.constructor)// object
+          let sum=0;
+          for(let i=0;i<myarg.length;i++)
+          sum=sum+myarg[i];
+          return sum;
+         }
+        var arr = multiply( 2, 3);
+        document.write(arr);
+         arr = multiply( 2, 3,5,6,7);
+        
+        </script>
+        
+</body>
+</html>

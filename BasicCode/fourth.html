@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        "use strict";
+        function call(a,b)
+        {
+            var p;
+            p=a*b;
+            //document.write(p);
+            return p;
+
+        }
+        var x,y;
+        x=10;
+        y=25;
+        var res=call(x,y);
+        document.write("Result by passing two parameters:"+res);
+
+        document.write("</br>");
+
+        var x=100;
+        var res=call(x);
+        document.write("Result after passing only one parameter:"+res);
+         //as only one parameter is passed so parameter+undefined(whhich is second parameter for  the function not passed so= NaN).
+        
+         //Improvised code for undefinded variables.
+        document.write("<hr>");
+    </script>
+    <script>
+        function call1(a,b)
+         {
+             var p;
+             if(a!=undefined && b!=undefined)
+             {
+                 p=a*b;
+                
+             }
+             else if(a!=undefined)
+             {
+                 p=a;
+                
+             }
+             return p;
+        }
+
+        var x,y;
+        x=10;
+        y=25;
+        var res=call1(x,y);
+        document.write("Result by passing two parameters:"+res);
+
+        document.write("</br>");
+
+        var x=100;
+        var res=call1(x);
+        document.write("Result after passing only one parameter:"+res);
+    </script>  
+         
+
+   
+
+
+</body>
+</html>

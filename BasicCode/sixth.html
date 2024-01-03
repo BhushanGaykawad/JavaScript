@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Passing default parameters to the function.
+        "use strict";
+        function call(a=30,b=10) // here b =1 is a default value for the b.If value of b is passed through the function call,b=1 will be overide with that value.
+        // Default value must be a last parameter,If it passed in between of the arguments of the function  it will give you error.
+        //ex. function(a=10,b)
+
+        {  var p;
+        p=a*b
+        return p;
+         }
+        var x , y;
+       x=5;
+        y=7;
+        var r=call(x);
+        document.write(r);
+        //document.write(call(3,3));
+        </script>
+        
+</body>
+</html>
