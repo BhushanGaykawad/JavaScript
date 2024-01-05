@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var go=function(w)
+            {
+                     alert(w(5));
+            }
+        
+        go(function(a)
+         {
+                 return a*a*a
+            }
+      )
+        
+       //document.write(go());
+        
+        
+    </script>
+
+<script>    
+    function mydata(param1, param2, callback) {  
+                alert('Started learning at.\n\nIt has: ' + param1 + ', ' + param2);  
+                callback();  
+        }  
+          
+    mydata('vita', 'DAC', function() { alert('Finished learning DAC');});
+    
+    
+    
+    </script> 
+    
+        
+</body>
+</html>
