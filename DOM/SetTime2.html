@@ -1,0 +1,21 @@
+TRY THIS!!!!!!!!!!!!!!
+<!DOCTYPE html><head><script>
+var a=1;
+var t;
+function call()
+{
+    document.getElementById("nm").value=a++;
+    t=setInterval("call()",1000);
+}
+function tp()
+{
+    alert("hi");
+    clearInterval(t)
+ }
+</script></head><body>
+<input type="textbox" id="nm" value="hi" />
+<input type="button" value="start" onclick="call()"/>
+<input type="button" onclick="tp()" value="stop">
+</body>
+</html>
+

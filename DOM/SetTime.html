@@ -1,0 +1,25 @@
+<!DOCTYPE html><head><script>
+    var a;
+    var t;
+    function st()
+    {
+        a=1;
+        t=setInterval("call()",1000);
+    }
+    function call()
+    {
+        document.getElementById('nm').value=a++;
+    }
+    function tp()
+    {
+        alert("hi");
+        clearInterval(t)
+     }
+    </script></head><body>
+    <input type="textbox" id="nm" value="hi" />
+    <input type="button" value="start" onclick="st()"/>
+    <input type="button" onclick="tp()" value="stop">
+    </body>
+    </html>
+    
+    

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script>
+        function callme() {
+            let s = document.getElementsByTagName("p");   //$(‘p’)
+            let l = s.length;
+            let d = document.getElementsByTagName("dd");
+            let ss=document.getElementsByTagName("ss")
+            for (i = 0; i < l; i++) 
+            {
+                 alert(s[i].innerHTML) 
+                 d.innerHTML+=s[i].innerHTML;
+                 ss.innerHTML+=s[i].innerHTML;
+            }
+
+        } </script>
+</head>
+
+<body>
+    <input type="button" onclick="callme()" value="clickme" />
+    <p>Welcome<b> to world of</b> Dom</p>
+    <p><b>2nd </b> p </p>
+    <p>3rd p</p>
+    <div id="dd"></div>
+    <span id="ss"></span>
+</body>
+
+</html>
