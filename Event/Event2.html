@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head>
+    <script>
+    function go()
+    {
+        alert("click event");
+    }
+    </script></head><body>
+    <form>
+    <input type="button" id="btn"/>
+    <p id="pp"> i am p tag</p>
+    </form>
+    </body>
+    <script>
+    document.getElementById("btn").addEventListener("click",go);
+    document.getElementById("pp").addEventListener("mouseover", function rise(){alert("go rise")});
+    </script>
+    </html>
