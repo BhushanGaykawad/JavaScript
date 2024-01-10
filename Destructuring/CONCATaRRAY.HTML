@@ -1,0 +1,12 @@
+<script>
+
+    // cloning an array in ECMAScript 5
+    var colors = ["red", "green", "blue"];
+    var colors2 = ["white","pink", "black"];
+    //var clonedColors = colors.concat(colors2);
+   // console.log(clonedColors);
+    //"[red,green,blue, white, pink, black]"
+    var clonedColors=[...colors, ...colors2];
+    console.log(clonedColors);
+
+</script>
