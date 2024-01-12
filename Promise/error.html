@@ -1,0 +1,8 @@
+<script>
+let promise=new Promise((resolve,reject) =>{ throw new Error("error");
+
+}).finally(()=>alert."Promise ready"))
+.then (r=> alert(r),err=>alert(err))
+.then(r=>alert(r))
+.catch(err=>alert(err));
+</script>

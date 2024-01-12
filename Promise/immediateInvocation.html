@@ -1,0 +1,17 @@
+<script>
+    let promise=new Promise(function(resolve,reject)
+    {
+        console.log("see............."+resolve.constructor)
+        console.log("2nd resolve")
+        setTimeout(()=>resolve("done...!!",1000));
+        setTimeout(()=>reject("Error..!!!",1500));
+
+    })
+    let dd=promise.then(
+        result=>alert(result),
+        error =>alert("error...???"+error)
+    )
+    console.log(dd);
+    console.log(promise);
+
+</script>
