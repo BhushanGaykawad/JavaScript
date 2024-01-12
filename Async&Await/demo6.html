@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Async-Await Demo 2</h2>
+    <p id="demo"></p>
+    <script>
+       async function getfile()
+       {
+        let promise=new Promise(function(resolve,reject)
+        {
+            let xhr=new XMLHttpRequest();
+            xhr.open('GET','ejson.json');
+            xhr.onload=function()
+            {
+                if(xhr.status==200)
+                {
+                    resolve((xhr.response));
+                }
+                else
+                {
+                    resolve("File not found");
+                   // reject("file not found");
+                }
+
+            };
+            xhr.send();
+
+        });c
+        document.getElementById("demo").innerHTML=await promise;
+    }
+    getfile();
+
+    </script>
+</body>
+</html>

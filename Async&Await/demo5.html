@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>ASYNC Demo</h2>
+    <p id="demo"></p>
+    <script>
+        function sayHello(value)
+        {
+            document.getElementById("demo").innerHTML=value
+        }
+        async function myfunction()
+        {
+            return "Hello"
+        }
+
+        myfunction().then(
+            function (value){sayHello(value);},
+            function (value){sayHello(value);}
+        );
+
+        
+    </script>
+
+
+</body>
+</html>
