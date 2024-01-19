@@ -1,0 +1,36 @@
+<!--create 3 check box displaying book name and price, as per selection of user,  display total amount of book purchased in a disabled text box.-->
+<html>
+  <head>
+    <script>
+      function readchk() {
+        var sldata = 0;
+        if (document.frm.a.checked)
+        { 
+            var a1=(document.frm.a.value);
+            sldata=parseFloat(a1);
+                                          
+        }
+
+        if (document.frm.b.checked) sldata += parseFloat(document.frm.b.value);
+
+        if (document.frm.c.checked) sldata += parseFloat(document.frm.c.value);
+
+        document.getElementById("dd").value = sldata;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="frm">
+      <input type="checkbox" name="a" value="100" />Effective Java $100
+      </br>
+      <input type="checkbox" name="b" value="105" />Head First Java  $105
+            </br>
+      <input type="checkbox" name="c" value="108" />Java: The Complete Reference  $108
+            </br>
+      <input type="text" id="dd" disabled/>
+            </br>
+                  </br>
+      <input type="button" value="Total" onclick="readchk()" />
+    </form>
+  </body>
+</html>
